@@ -29,24 +29,17 @@ class Persona:
         print(f"Nombre: {self.nombre}, Edad: {self.edad}, Género: {self.genero}, Ocupación: {self.ocupacion}")
     # Metodo 5: pasar saludo
     def saludara(self,miri):
-        return f"hola, {self.nombre},te manda a saludar{miri}"
+        print (f"hola, {self.nombre},te manda a saludar {miri.nombre}")
 # Crear una instancia de la clase Persona
 persona1 = Persona("Carlos", 30, "Masculino", "Ingeniero")
+persona2 = Persona("victor", 10, "hombre", "docente")
+persona3 = Persona("brenda", 21, "Femenino", "secretaria")
 
 # Usar los métodos
 persona1.presentarse()  # Hola, mi nombre es Carlos y tengo 30 años.
 persona1.cambiar_ocupacion("Profesor")  # Carlos ahora trabaja como Profesor.
 persona1.cumplir_anios()  # Carlos ha cumplido 31 años.
 persona1.mostrar_informacion()  # Nombre: Carlos, Edad: 31, Género: Masculino, Ocupación: Profesor
-print(persona1.saludara(miri))
-# Crear otra instancia de Persona
-persona2 = Persona("victor", 10, "hombre", "docente")
-
-# Saludar a otra persona
 persona1.saludar(persona2)  # Carlos saluda a Ana. ¡Hola, Ana!
+persona1.saludara(persona2)
 
-persona3 = Persona("brenda", 21, "Femenino", "secretaria")
-
-# Saludar a otra persona
- # Carlos saluda a Ana. ¡Hola, Ana!
-persona2.saludar(persona3)
